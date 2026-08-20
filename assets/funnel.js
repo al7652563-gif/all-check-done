@@ -22,11 +22,12 @@ function trackDecline(stepName) {
 
 /* ================== GEO DETECTION (country-verification page only) ================== */
 function detectRegion() {
-  var countryData = {
-    GB: { flag: "🇬🇧", name: "United Kingdom", short: "the UK" },
-    CA: { flag: "🇨🇦", name: "Canada", short: "Canada" },
-    US: { flag: "🇺🇸", name: "United States", short: "the US" }
-  };
+ var countryData = {
+  GB: { flag: "🇬🇧", name: "United Kingdom", short: "the UK" },
+  CA: { flag: "🇨🇦", name: "Canada", short: "Canada" },
+  AE: { flag: "🇦🇪", name: "United Arab Emirates", short: "the UAE" },
+  US: { flag: "🇺🇸", name: "United States", short: "the US" }
+};
 
   fetch("https://ipapi.co/json/")
     .then(function (res) { return res.json(); })
