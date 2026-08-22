@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>  Bot Detection </title>
+<meta name="description" content="Learn how automated traffic detection works, why websites filter out bots, and how this keeps load times fast for real visitors.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Websites Detect and Filter Automated Traffic",
+  "description": "An overview of bot detection methods and why filtering automated traffic benefits real visitors.",
+  "author": { "@type": "Organization", "name": "Now Playing" },
+  "publisher": { "@type": "Organization", "name": "Now Playing" },
+  "datePublished": "2026-01-15"
+}
+</script>
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://tpc.googlesyndication.com">
+<link rel="preconnect" href="https://www.clarity.ms">
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>window.googletag = window.googletag || {cmd: []};</script>
+<script>
+/* Ad slots defined inline (was /assets/ads-early.js) — inlining removes a
+   blocking round trip in <head>, so GPT is ready sooner. */
+googletag.cmd.push(function () {
+  googletag.defineSlot('/23313830399/TOP', [[320, 50], [300, 50]], 'div-gpt-ad-1787049080357-0').addService(googletag.pubads());
+  googletag.defineSlot('/23313830399/BOTTOM', [[300, 250], [336, 280]], 'div-gpt-ad-1787049302190-0').addService(googletag.pubads());
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});
+</script>
+<!-- GA4 config runs immediately (no download — it only queues into
+     dataLayer, so event timing stays accurate). The heavy gtag.js and
+     Clarity downloads are held back so GPT gets the network first. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G176TZC8TC');
+</script>
+
+<!-- Analytics loader.
+     Waits for the page to finish loading (or 1.5s, whichever comes first)
+     before downloading GA4 and Clarity, so they don't compete with the ad
+     request for bandwidth. If this page was prerendered by the previous
+     page, everything is held until the visitor actually arrives — that
+     keeps Clarity recordings as one session instead of fragments. -->
+<script>
+(function () {
+  function inject(src) {
+    var s = document.createElement('script');
+    s.async = 1; s.src = src;
+    var f = document.getElementsByTagName('script')[0];
+    f.parentNode.insertBefore(s, f);
+  }
+
+  function loadAnalytics() {
+    inject('https://www.googletagmanager.com/gtag/js?id=G-G176TZC8TC');
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y53jnwxucu");
+  }
+
+  var fired = false;
+  function go() { if (fired) return; fired = true; loadAnalytics(); }
+
+  function arm(delay) {
+    if (document.readyState === 'complete') {
+      setTimeout(go, delay);
+    } else {
+      window.addEventListener('load', function () { setTimeout(go, delay); }, { once: true });
+    }
+    /* Safety net: never wait longer than 1.5s past this point, even if
+       something on the page (like the video) keeps 'load' pending. */
+    setTimeout(go, 1500 + delay);
+  }
+
+  if (document.prerendering) {
+    /* This page was prerendered, so it's already fully loaded and waiting.
+       The moment the visitor arrives, the page transition animation runs.
+       Hold analytics back an extra 800ms so their scripts don't hog the
+       main thread mid-animation and make the change feel like a refresh. */
+    document.addEventListener('prerenderingchange', function () { arm(800); }, { once: true });
+  } else {
+    arm(0);
+  }
+})();
+</script>
+
+<link rel="preload" as="image" href="https://pub-5f52dd93f3804fbcb113f853eb38a385.r2.dev/USA/JAY%20DONE.jpg" fetchpriority="high">
+<link rel="prefetch" href="/terms-agreement/">
+<script type="speculationrules">
+{"prerender": [{"source": "list", "urls": ["/terms-agreement/"]}]}
+</script>
+<style>html,body{background:#0b0c0e;}</style>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="hamburger"><span></span><span></span><span></span></div>
+  <div class="logo"><span class="now">OnlyFans</span> <span class="playing">Leak</span></div>
+  <div class="favorite">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+    FAVORITE
+  </div>
+</div>
+
+<div class="teaser">
+  <div class="teaser-label">— WATCH TO THE END… —</div>
+  <div class="teaser-sub">Leaked raw footage of an OnlyFans star.</div>
+</div>
+
+<div class="ad-slot-top">
+  <div class="ad-label">Advertisement</div>
+  <div id="div-gpt-ad-1787049080357-0"></div>
+</div>
+<script>
+/* Fires the ad request here, near the top of the page, instead of waiting
+   for funnel.js at the bottom. Single Request is on, so this one call
+   fetches BOTH the top and bottom ads together. */
+googletag.cmd.push(function () {
+  googletag.display('div-gpt-ad-1787049080357-0');
+});
+</script>
+
+<div class="frame">
+  <img src="https://pub-5f52dd93f3804fbcb113f853eb38a385.r2.dev/USA/JAY%20DONE.jpg" alt="">
+  <div class="video-dim"></div>
+
+  <div class="stage">
+    <div class="wrap">
+      <div class="modal">
+        <div class="loading-state" id="loadingState">
+          <div class="skeleton sk-badge"></div>
+          <div class="skeleton sk-line sk-title"></div>
+          <div class="skeleton sk-line sk-desc1"></div>
+          <div class="skeleton sk-line sk-desc2"></div>
+          <div class="skeleton sk-line sk-desc3"></div>
+          <div class="skeleton sk-line sk-link"></div>
+          <div class="sk-divider"></div>
+          <div class="skeleton sk-btn"></div>
+          <div class="skeleton sk-btn"></div>
+          <div class="loading-tag"><span class="dot"></span>Verifying…</div>
+        </div>
+        <div class="card">
+          <div class="badge plain"><svg viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="19" height="19"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h1>Quick Verification Check</h1>
+          <p class="desc">We need to confirm you're a real visitor and not an automated script before continuing.</p>
+          <div class="verify-visual" id="verifyVisual"><div class="bar" id="verifyBar"></div></div>
+          <div class="legal-link" onclick="alert('Automated traffic is filtered to keep load times fast for real visitors.')">Automated Traffic Notice</div>
+          <div class="divider"></div>
+          <button class="gate-btn" onclick="goToNextPage('/terms-agreement/')">I am not a bot — Enter</button>
+          <button class="gate-btn" onclick="trackDecline('Human Verification'); window.location.href = EXIT_URL;">I am a bot — Exit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-meta">
+  <div class="video-meta-avatar">NP</div>
+  <div class="video-meta-body">
+    <div class="video-meta-title">USA 🇺🇸 EXCLUSIVE || Leaked  footage of an OnlyFans star</div>
+    <div class="video-meta-sub">OnlyFans Leak · 974K views · 1 month ago</div>
+  </div>
+  <div class="video-meta-dots">⋮</div>
+</div>
+
+<div class="ad-slot-bottom">
+  <div class="ad-label">Advertisement</div>
+  <div id="div-gpt-ad-1787049302190-0"></div>
+</div>
+<script>
+/* Shows the bottom ad the moment its box exists, instead of waiting for
+   funnel.js at the very end of the page. The creative was already fetched
+   alongside the top ad in the same single request, so this just paints
+   something that is already sitting in the browser, ready. */
+googletag.cmd.push(function () {
+  googletag.display('div-gpt-ad-1787049302190-0');
+});
+</script>
+
+<div class="content-article">
+  <h2>How Websites Detect and Filter Automated Traffic</h2>
+  <p>Every website with meaningful traffic deals with a hidden problem: a portion of visitors aren't people at all. Automated bots — ranging from simple scripts to sophisticated crawlers — constantly probe websites for various purposes, some harmless like search engine indexing, others less so, like scraping content or attempting to abuse forms and login systems. Distinguishing between the two in real time is a genuine technical challenge.</p>
+  <p>Modern bot detection relies on a mix of signals rather than a single test. Browser fingerprinting, interaction patterns, request timing, and behavioral analysis all feed into a quick assessment of whether a visitor is behaving like a human or a script. Unlike older CAPTCHA systems that interrupted every visitor with puzzles, many current approaches work quietly in the background, only escalating to a visible check when something looks unusual.</p>
+  <p>This matters for regular visitors too, even though it's mostly invisible. Filtering bot traffic reduces server load, keeps page load times fast, and ensures that engagement metrics and analytics data actually reflect real human behavior rather than being skewed by automated noise. It's a quiet but essential piece of infrastructure behind most modern websites.</p>
+  <div class="topic-tags">
+    <span>Bot Detection</span>
+    <span>Automated Traffic</span>
+    <span>Web Security</span>
+    <span>Site Performance</span>
+    <span>Traffic Filtering</span>
+  </div>
+</div>
+
+
+
+<script src="/assets/funnel.js"></script>
+<script>
+  runHumanCheck();
+</script>
+
+</body>
+</html>
